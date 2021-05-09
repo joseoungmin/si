@@ -22,7 +22,7 @@ body{margin:0px;
         font-family:"jua";
         text-align:right;}
 #time{font-size: 45px;
-  font-family:"jua";
+    font-family:"jua";
      text-align : center;}
 #sub{width: 300px;
      height:60px;
@@ -30,7 +30,8 @@ body{margin:0px;
      font-size:40px;
     font-family:"jua";}
 #write{text-align : center;
-       font-size:40px;}
+       font-size:40px;
+      font-family:"jua";}
 #si-1{margin:30px;
       }
 #si-2{font-size: 40px;
