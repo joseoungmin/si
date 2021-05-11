@@ -43,3 +43,10 @@ body{margin:0px;
       text-align:center;
       padding: 40px;
       font-family:"jua";}
+#writeend{font-size:20px;
+      text-align:center;
+      margin: 50px;
+      padding-left: auto;
+      padding-right: auto;
+      border: 1px solid black;
+      font-family:"jua";}
