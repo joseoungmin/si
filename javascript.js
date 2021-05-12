@@ -19,7 +19,7 @@
                 =(Math.floor(a)+'년 후 목표 달성');}
               else if (obj < 4){writeend.innerHTML
                   =(Math.floor(abcd)+'주 후 목표 달성');}
-              else if(3 < obj < 48){writeend.innerHTML
+              else if(obj < 48){writeend.innerHTML
                 =(Math.floor(b)+'개월 '+Math.floor(abcd)+'주 후 목표 달성');}
               }
 

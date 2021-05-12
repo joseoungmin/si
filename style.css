@@ -50,3 +50,7 @@ body{margin:0px;
       padding-right: auto;
       border: 1px solid black;
       font-family:"jua";}
+#coupang{height: 140px;
+  position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);}
