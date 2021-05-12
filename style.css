@@ -51,6 +51,7 @@ body{margin:0px;
       border: 1px solid black;
       font-family:"jua";}
 #coupang{height: 140px;
-  position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);}
+         width: 680px;
+         margin-left: auto;
+         margin-right: auto;}
+#addfit{height:100px;}
