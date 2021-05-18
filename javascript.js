@@ -91,6 +91,10 @@ function zzz(obj){
                   writeend.innerHTML = "";
                   writeend.innerHTML+=((z)+'년 후 목표달성');
                   sub.value = "다시 계산하기";
+                  z = z + 1
+                  write.innerHTML +=(z+"년 "+comma(Math.floor(aa))+"원<br>")
+                  aa = aa * cb
+                  aa = aa + ab
       }else if(bbbbb=="매달"){
                   z = z + 1
                   write.innerHTML = (z+"개월 "+comma(Math.floor(aa))+"원<br>")
@@ -103,6 +107,10 @@ function zzz(obj){
                   aa = aa + ab}
                   zzzz(z);
                   sub.value = "다시 계산하기";
+                  z = z + 1
+                  write.innerHTML += (z+"개월 "+comma(Math.floor(aa))+"원<br>")
+                  aa = aa * cq
+                  aa = aa + ab
       }else if(bbbbb=="매주"){
                 z = z + 1
                 write.innerHTML = (z+"주 "+comma(Math.floor(aa))+"원<br>")
@@ -115,6 +123,10 @@ function zzz(obj){
                   aa = aa + ab}
                   zzz(z);
                   sub.value = "다시 계산하기";
+                  z = z + 1
+                  write.innerHTML += (z+"주 "+comma(Math.floor(aa))+"원<br>")
+                  aa = aa * cw
+                  aa = aa + ab
       }else if(bbbbb=="매일"){
                 z = z + 1
                 write.innerHTML = (z+"일 "+comma(Math.floor(aa))+"원<br>")
@@ -127,6 +139,10 @@ function zzz(obj){
                   aa = aa + ab}
                   zz(z);
                   sub.value = "다시 계산하기";
+                  z = z + 1
+                  write.innerHTML += (z+"일 "+comma(Math.floor(aa))+"원<br>")
+                  aa = aa * ce
+                  aa = aa + ab
       }}
 
       function inputNumberFormat(obj) {
