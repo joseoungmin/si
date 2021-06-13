@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="stylever2.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQN3J42N18"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LQN3J42N18');
+    </script>
+
+    <script src="javascriptver2.js"></script>
+    <title>저축 시뮬레이터</title>
+  </head>
+  <body>
+<div id=si-1>
+  <a href="index.html" class="si-2">저축 시뮬레이터 ver.1</a>
+  <br><a href="ver2.html" class="si-2">저축 시뮬레이터 ver.2</a>
+</div>
+<h1 id = h1>저축 시뮬레이터 ver.2</h1>
+<div id= si-3>나는 얼마를 모을 수 있을까?<br>
+</div>
+  <div id = "div">
+    <center><table id = table-1>
+    <tr>
+      <td>보유중인 금액</td>
+      <td>주기</td>
+      <td>저축할 금액</td>
+      <td>이자</td>
+    </tr>
+    <tr>
+      <td class="td1-1">
+        <input type="text" id="a-1"  placeholder="금액을 입력해주세요"class="intex"value=""onkeyup="inputNumberFormat(this);">원
+      </td>
+      <td class="td1-1">
+        <select name="time1-1" class = "time" id="time1-1">
+        <option value="매일">매일</option>
+        <option value="매주">매주</option>
+        <option value="매달">매달</option>
+        <option value="매년">매년</option>
+        </select>
+      </td>
+      <td class="td1-1">
+        <input type="text" id="b-1" placeholder="금액을 입력해주세요"class="intex"value=""onkeyup="inputNumberFormat(this);">원
+      </td>
+      <td class="td1-1">
+        <select name="time2-1" class = "time"id="time2-1">
+          <option value="매일">매일</option>
+          <option value="매주">매주</option>
+          <option value="매달">매달</option>
+          <option value="매년">매년</option>
+        </select><input type="text" id="c-1"class="intex1">%
+      </td>
+    </tr></table></center></div>
+    <center><div id="td2-1">
+      <input type="button" onclick = "addRow()" id="td2-2" value="행 추가">
+      <input type="button" onclick = "deleteRow(-1)"id="td2-3" value="행 삭제">
+    </div></center>
+    <center><div id ="end">
+    <select name="end1" class = "end"id="end1">
+      <option value="0">0년</option>
+      <option value=1>1년</option>
+      <option value=2>2년</option>
+      <option value=3>3년</option>
+      <option value=4>4년</option>
+      <option value=5>5년</option>
+      <option value=6>6년</option>
+      <option value=7>7년</option>
+      <option value=8>8년</option>
+      <option value=9>9년</option>
+      <option value=10>10년</option>
+      <option value=11>11년</option>
+      <option value=12>12년</option>
+      <option value=13>13년</option>
+      <option value=14>14년</option>
+      <option value=15>15년</option>
+      <option value=16>16년</option>
+      <option value=17>17년</option>
+      <option value=18>18년</option>
+      <option value=19>19년</option>
+      <option value=20>20년</option>
+      <option value=21>21년</option>
+      <option value=22>22년</option>
+      <option value=23>23년</option>
+      <option value=24>24년</option>
+      <option value=25>25년</option>
+      <option value=26>26년</option>
+      <option value=27>27년</option>
+      <option value=28>28년</option>
+      <option value=29>29년</option>
+      <option value=30>30년</option>
+      <option value=31>31년</option>
+      <option value=32>32년</option>
+      <option value=33>33년</option>
+      <option value=34>34년</option>
+      <option value=35>35년</option>
+      <option value=36>36년</option>
+      <option value=37>37년</option>
+      <option value=38>38년</option>
+      <option value=39>39년</option>
+      <option value=40>40년</option>
+      <option value=41>41년</option>
+      <option value=42>42년</option>
+      <option value=43>43년</option>
+      <option value=44>44년</option>
+      <option value=45>45년</option>
+      <option value=46>46년</option>
+      <option value=47>47년</option>
+      <option value=48>48년</option>
+      <option value=49>49년</option>
+      <option value=50>50년</option>
+    </select>
+    <select name="end2" class = "end"id="end2">
+      <option value="0">0개월</option>
+      <option value=1>1개월</option>
+      <option value=2>2개월</option>
+      <option value=3>3개월</option>
+      <option value=4>4개월</option>
+      <option value=5>5개월</option>
+      <option value=6>6개월</option>
+      <option value=7>7개월</option>
+      <option value=8>8개월</option>
+      <option value=9>9개월</option>
+      <option value=10>10개월</option>
+      <option value=11>11개월</option>
+    </select>
+    <select name="end3" class = "end"id="end3">
+      <option value="0">0일</option>
+      <option value=1>1일</option>
+      <option value=2>2일</option>
+      <option value=3>3일</option>
+      <option value=4>4일</option>
+      <option value=5>5일</option>
+      <option value=6>6일</option>
+      <option value=7>7일</option>
+      <option value=8>8일</option>
+      <option value=9>9일</option>
+      <option value=10>10일</option>
+      <option value=11>11일</option>
+      <option value=12>12일</option>
+      <option value=13>13일</option>
+      <option value=14>14일</option>
+      <option value=15>15일</option>
+      <option value=16>16일</option>
+      <option value=17>17일</option>
+      <option value=18>18일</option>
+      <option value=19>19일</option>
+      <option value=20>20일</option>
+      <option value=21>21일</option>
+      <option value=22>22일</option>
+      <option value=23>23일</option>
+      <option value=24>24일</option>
+      <option value=25>25일</option>
+      <option value=26>26일</option>
+      <option value=27>27일</option>
+      <option value=28>28일</option>
+      <option value=29>29일</option>
+      <option value=30>30일</option>
+    </select> 후 나의 자산은?
+
+  </div></center>
+<div><center>
+  <input type="button"id="sub" value="계산하기"onclick="restart()">
+</center></div>
+<div id="writeend">
+</div>
+<div id="write">
+</div>
+<div>
+<ins class="kakao_ad_area" style="display:none;"
+ data-ad-unit    = "DAN-5NZ9fzp8MHZimz0M"
+ data-ad-width   = "320"
+ data-ad-height  = "100"></ins>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>
+    new PartnersCoupang.G({"id":480214,"trackingCode":"AF0945214","subId":null,"template":"carousel","width":"680","height":"140"});
+</script>
+
+
+
+  </body>
+</html>

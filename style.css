@@ -31,10 +31,11 @@ body{margin:0px;
     font-family:"jua";}
 #write{text-align : center;
        font-size:35px;
-      font-family:"jua";}
+      font-family:"jua";
+    margin-bottom: 15px;}
 #si-1{margin:30px;
       }
-#si-2{font-size: 40px;
+.si-2{font-size: 30px;
       font-weight: bold;
       color:black;
       font-family:"jua";
