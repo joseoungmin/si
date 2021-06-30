@@ -17,17 +17,21 @@ body{margin:0px;
        font-family:"jua";
        text-align:right;
        border: 0px;
-       background-color: WhiteSmoke;}
-.intex1{width:100px;
+       background-color: WhiteSmoke;
+     border-radius: 10px;
+     outline: none;}
+.intex1{width:92px;
         height:45px;
         font-size:50px;
         font-family:"jua";
         text-align:right;
-        background-color: whiteSmoke;}
+        background-color: whiteSmoke;
+      border-radius: 10px;}
 #time{font-size: 45px;
       font-family:"jua";
       text-align : center;
-      background-color: whiteSmoke;}
+      background-color: whiteSmoke;
+    border-radius: 10px;}
 #sub{width: 300px;
      height:60px;
      text-align : center;
