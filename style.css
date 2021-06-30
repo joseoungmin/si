@@ -1,43 +1,46 @@
 @font-face { src: url(css-font/BMJUA_ttf.ttf);
               font-family: "jua";}
 body{margin:0px;
-      padding: 0px;}
+     padding: 0px;
+     background-color: WhiteSmoke;}
 #h1{font-size : 60px;
-  font-family:"jua";
+    font-family:"jua";
     text-align:center;
     margin-top: 100px;}
 #div{text-align:center;
     font-size:50px;
     font-family:"jua";
-    line-height: 1.5;
-    }
+    line-height: 1.5;}
 .intex{width: 360px;
        height: 45px;
        font-size: 50px;
        font-family:"jua";
-       text-align:right;}
+       text-align:right;
+       border: 0px;
+       background-color: WhiteSmoke;}
 .intex1{width:100px;
         height:45px;
         font-size:50px;
         font-family:"jua";
-        text-align:right;}
+        text-align:right;
+        background-color: whiteSmoke;}
 #time{font-size: 45px;
-    font-family:"jua";
-     text-align : center;}
+      font-family:"jua";
+      text-align : center;
+      background-color: whiteSmoke;}
 #sub{width: 300px;
      height:60px;
      text-align : center;
      font-size:40px;
-    font-family:"jua";}
+     font-family:"jua";}
 #write{text-align : center;
        font-size:35px;
-      font-family:"jua";
-    margin-bottom: 15px;}
-#si-1{margin:30px;
-      }
+       font-family:"jua";
+       margin-bottom: 15px;}
+#si-1{margin:30px;}
 .si-2{font-size: 30px;
       font-weight: bold;
-      color:black;
+      color:#424242;
       font-family:"jua";
       text-decoration: none;}
 #si-3{font-size:20px;
@@ -45,12 +48,12 @@ body{margin:0px;
       padding: 40px;
       font-family:"jua";}
 #writeend{font-size:45px;
-      text-align:center;
-      margin: 50px;
-      padding-left: auto;
-      padding-right: auto;
-      border: 1px solid black;
-      font-family:"jua";}
+          text-align:center;
+          margin: 50px;
+          padding-left: auto;
+          padding-right: auto;
+          border: 1px solid black;
+          font-family:"jua";}
 #coupang{height: 140px;
          width: 680px;
          margin-left: auto;
