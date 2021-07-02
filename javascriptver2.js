@@ -266,8 +266,8 @@ else if (time1 == "매년"){
     console.log(len);
   }
 const sum = len.reduce((a,b) => (a+b));
-inner = sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-write.innerHTML = (inner +"원");
+// inner = sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+write.innerHTML = (numberToKorean(sum) +"원");
 }
 
 
@@ -282,7 +282,30 @@ function uncomma(str) {
     str = String(str);
     return str.replace(/[^\d]+/g, "");}
 
+// 돈 단위 함수
+function numberToKorean(number){
+    var inputNumber  = number < 0 ? false : number;
+    var unitWords    = ['', '만', '억', '조', '경'];
+    var splitUnit    = 10000;
+    var splitCount   = unitWords.length;
+    var resultArray  = [];
+    var resultString = '';
 
+    for (var i = 0; i < splitCount; i++){
+         var unitResult = (inputNumber % Math.pow(splitUnit, i + 1)) / Math.pow(splitUnit, i);
+        unitResult = Math.floor(unitResult);
+        if (unitResult > 0){
+            resultArray[i] = unitResult;
+        }
+    }
+
+    for (var i = 0; i < resultArray.length; i++){
+        if(!resultArray[i]) continue;
+        resultString = String(resultArray[i]) + unitWords[i] + resultString;
+    }
+
+    return resultString;
+}
 
 function addRow() {
   // table element 찾기
