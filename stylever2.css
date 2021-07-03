@@ -138,6 +138,9 @@ td{
 #end1{
   width:90px;
 }
+#end2{
+  width:120px;
+}
 #end3{
   width:90px;
 }
@@ -210,7 +213,7 @@ td{
   font-family:"jua";
 }
 .td2-2{
-  width: 110px;
+  width: 120px;
   height:40px;
   color:black;
   font-size : 30px;
