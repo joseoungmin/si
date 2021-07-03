@@ -200,7 +200,7 @@ td{
 #td2-1{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 220px;
+  width: 260px;
   height:40px;
   color:black;
   text-align : canter;
