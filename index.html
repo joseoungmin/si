@@ -12,29 +12,65 @@
     gtag('js', new Date());
     gtag('config', 'G-LQN3J42N18');
   </script>
+  <script src="https://kit.fontawesome.com/9bbd978096.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
+    <script src="js1.js"></script>
     <title>저축 시뮬레이터</title>
   </head>
-  <body>
+
+
+<body>
+<nav class="navbar">
+  <div class="navbar_main">
+    <a href="index.html" id='main'>Minimin</a>
+  </div>
+  <div class="unit_div">
+    <ul class="unit">
+      <li class="subjact"><a href="#" class="atag" onclick="hide1()">시뮬레이터</a></li>
+      <div class="hide1">
+        <li><a href="ver2.html" class="atag">저축</a></li>
+        <li><a href="" class="atag">헬스</a></li>
+    </div>
+    </ul>
+    <ul class="unit">
+      <li class="subjact"><a href="#" class="atag" onclick="hide2()">프로그램</a></li>
+      <div class="hide2">
+        <li><a href="" class="atag">빠른댓글</a></li>
+        <li><a href="" class="atag">편한</a></li>
+      </div>
+    </ul>
+    <ul class="unit">
+      <li><a href="" class="atag">포토샵</a></li>
+    </ul>
+    <ul class="unit">
+      <li><a href="" class="atag">영상편집</a></li>
+    </ul>
+  </div>
+  <a href="#" class="toggle">
+      <i class="fas fa-bars fa-2x" onclick="hide()"></i>
+  </a>
+</nav>
 <div id=si-1>
-<a href="index.html" class="si-2">저축 시뮬레이터 ver.1</a>
-<br><a href="ver2.html" class="si-2">저축 시뮬레이터 ver.2</a>
+<a href="index.html" class="si-2">ver.1</a>
+<br><a href="ver2.html" class="si-2">ver.2</a>
 </div>
-<h1 id = h1>저축 시뮬레이터 ver.1</h1>
+<h1 id = h1>저축 시뮬레이터</h1>
+
 <div id= si-3>나는 얼마를 모을 수 있을까?<br><br>
 연 이자는 자본 수익률입니다<br>
 ex) 연 이자 3%의 적금을 들었어요 --> 연 이자 3%<br>
  매 년 10%의 배당금을 받아요 --> 연 이자 10%
 </div>
-<div id = "div">
 
-<select name="time" id="time">
-  <option value="매일">매일</option>
-  <option value="매주">매주</option>
-  <option value="매달">매달</option>
-  <option value="매년">매년</option>
-</select>
-<br> <input type="text" id="a" placeholder="저축하는 금액"class="intex"value=""onkeyup="inputNumberFormat(this);"> 원을 저축해서<br>
+<div id = "div">
+  <select name="time" id="time">
+    <option value="매일">매일</option>
+    <option value="매주">매주</option>
+    <option value="매달">매달</option>
+    <option value="매년">매년</option>
+  </select>
+<br>
+<input type="text" id="a" placeholder="저축하는 금액"class="intex"value=""onkeyup="inputNumberFormat(this);"> 원을 저축해서<br>
 <input type="text" id="b" placeholder="목표한 금액" class="intex"onkeyup="inputNumberFormat(this);">
 원을 만들려면?<br>연 이자
 <input type="text" id="c"class="intex1"placeholder="0">%

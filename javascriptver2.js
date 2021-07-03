@@ -18,7 +18,6 @@ const len = [];
 var table = document.getElementById('table-1');
 var num = table.rows.length;
 num = num - 1
-console.log(num)
     var ii = 0;
     //행의 갯수만큼 반복
     while (ii < num){
@@ -34,11 +33,8 @@ console.log(num)
       c = parseInt(c);
       c = c * 0.01
       c = c + 1;
-      console.log(c);
       var time1 = document.getElementById("time1-"+ii).value;
       var time2 = document.getElementById("time2-"+ii).value;
-      console.log(a);
-      console.log(time2);
       if (time1 == "매일"){
         i = 0;
         z = 0;
@@ -47,8 +43,6 @@ console.log(num)
                   a = a + b;
                   a = a * c;
                   i = i + 1;
-                  console.log(i);
-                  console.log(a);
                 }}
               else if (time2 == "매주"){
                 while (i < plus){
@@ -59,8 +53,6 @@ console.log(num)
                         z = 0;
                         a = a * c;
                   }
-                  console.log(i);
-                  console.log(a);
                 }}
                 else if (time2 == "매달"){
                 while (i < plus){
@@ -71,8 +63,6 @@ console.log(num)
                           z = 0;
                           a = a * c;
                         }
-                        console.log(i);
-                        console.log(a);
                       }}
                 else if (time2 == "매년"){
                   while (i < plus){
@@ -83,8 +73,6 @@ console.log(num)
                           z = 0;
                           a = a * c;
                         }
-                        console.log(i);
-                        console.log(a);
                       }}
 
               }else if (time1 == "매주"){
@@ -100,8 +88,6 @@ console.log(num)
                                 z = 0;
                                 a = a + b;
                                   }
-                            console.log(i);
-                            console.log(a);
                           }}
                           else if (time2 == "매주"){
                               while (i <= plus){
@@ -114,8 +100,6 @@ console.log(num)
                                   if (z >= 7){
                                     z = 0;
                                     a = a + b;}
-                            console.log(i);
-                            console.log(a);
                           }}
                           else if (time2 == "매달"){
                             while (i <= plus){
@@ -128,8 +112,6 @@ console.log(num)
                                 if (z >= 7){
                                   z = 0;
                                   a = a + b;}
-                          console.log(i);
-                          console.log(a);
                         }}
                         else if (time2 == "매년"){
                             while (i <= plus){
@@ -142,8 +124,6 @@ console.log(num)
                               if (z >= 7){
                                 z = 0;
                                 a = a + b;}
-                        console.log(i);
-                        console.log(a);
   }}}else if (time1 == "매달"){
             i = 0;
             j = 0;
@@ -157,8 +137,6 @@ console.log(num)
                     z = 0;
                     a = a + b;
                       }
-                console.log(i);
-                console.log(a);
               }}
               else if (time2 == "매주"){
                   while (i <= plus){
@@ -171,8 +149,6 @@ console.log(num)
                       if (z >= 30.4){
                         z = 0;
                         a = a + b;}
-                console.log(i);
-                console.log(a);
               }}
               else if (time2 == "매달"){
                 while (i <= plus){
@@ -185,8 +161,6 @@ console.log(num)
                     if (z >= 30.4){
                       z = 0;
                       a = a + b;}
-              console.log(i);
-              console.log(a);
             }}
             else if (time2 == "매년"){
                 while (i <= plus){
@@ -199,8 +173,6 @@ console.log(num)
                   if (z >= 30.4){
                     z = 0;
                     a = a + b;}
-            console.log(i);
-            console.log(a);
 }}}
 else if (time1 == "매년"){
           i = 0;
@@ -215,8 +187,6 @@ else if (time1 == "매년"){
                   z = 0;
                   a = a + b;
                     }
-              console.log(i);
-              console.log(a);
             }}
             else if (time2 == "매주"){
                 while (i <= plus){
@@ -229,8 +199,6 @@ else if (time1 == "매년"){
                     if (z >= 365){
                       z = 0;
                       a = a + b;}
-              console.log(i);
-              console.log(a);
             }}
             else if (time2 == "매달"){
               while (i <= plus){
@@ -243,8 +211,6 @@ else if (time1 == "매년"){
                   if (z >= 365){
                     z = 0;
                     a = a + b;}
-            console.log(i);
-            console.log(a);
           }}
           else if (time2 == "매년"){
               while (i <= plus){
@@ -257,13 +223,10 @@ else if (time1 == "매년"){
                 if (z >= 365){
                   z = 0;
                   a = a + b;}
-          console.log(i);
-          console.log(a);
 }}}
     //배열에 ii 추가}
     a = Math.floor(a);
     len.push(a);
-    console.log(len);
   }
 const sum = len.reduce((a,b) => (a+b));
 // inner = sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -349,5 +312,18 @@ function a123456(){
    i = i + 1
 
   }
+}
 
+function hide(){
+  const unit = document.querySelector(".unit_div");
+    unit.classList.toggle('active');
+  }
+
+function hide1(){
+  const unit = document.querySelector(".hide1");
+  unit.classList.toggle('active');
+}
+function hide2(){
+  const unit = document.querySelector(".hide2");
+  unit.classList.toggle('active');
 }

@@ -1,68 +1,166 @@
 @font-face { src: url(css-font/BMJUA_ttf.ttf);
               font-family: "jua";}
-body{margin:0px;
-     padding: 0px;
-     background-color: WhiteSmoke;}
-#h1{font-size : 60px;
-    font-family:"jua";
-    text-align:center;
-    margin-top: 100px;}
-#div{text-align:center;
-    font-size:50px;
-    font-family:"jua";
-    line-height: 1.5;}
-.intex{width: 360px;
-       height: 45px;
-       font-size: 50px;
-       font-family:"jua";
-       text-align:right;
-       border: 0px;
-       background-color: WhiteSmoke;
-     border-radius: 10px;
-     outline: none;}
-.intex1{width:92px;
-        height:45px;
-        font-size:50px;
-        font-family:"jua";
-        text-align:right;
-        background-color: whiteSmoke;
-      border-radius: 10px;}
-#time{font-size: 45px;
-      font-family:"jua";
-      text-align : center;
-      background-color: whiteSmoke;
-    border-radius: 10px;}
-#sub{width: 300px;
-     height:60px;
-     text-align : center;
-     font-size:40px;
-     font-family:"jua";}
-#write{text-align : center;
-       font-size:35px;
-       font-family:"jua";
-       margin-bottom: 15px;}
-#si-1{margin:30px;}
-.si-2{font-size: 30px;
-      font-weight: bold;
-      color:#424242;
-      font-family:"jua";
-      text-decoration: none;}
-#si-3{font-size:20px;
-      text-align:center;
-      padding: 40px;
-      font-family:"jua";}
-#writeend{font-size:45px;
-          text-align:center;
-          margin: 50px;
-          padding-left: auto;
-          padding-right: auto;
-          border: 1px solid black;
-          font-family:"jua";}
-#coupang{height: 140px;
-         width: 680px;
-         margin-left: auto;
-         margin-right: auto;}
-#addfit{height:100px;
-        width: 320px;
-        margin-left: auto;
-        margin-right: auto;}
+body{
+  margin:0px;
+  padding: 0px;
+  background-color: WhiteSmoke;
+  font-family: "jua";
+}
+.navbar{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: gray;
+  padding: 8px 12px;
+}
+.toggle i{
+  color: white;
+}
+.toggle{
+  position: absolute;
+  right: 28px;
+}
+#main{
+  text-decoration: none;
+  color: white;
+  font-size: 27px;
+}
+.unit_div.active{
+  display:flex;
+  opacity: 1;
+}
+.unit_div{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+}
+.unit_div ul{
+  width:100%;
+  text-align: center;
+}
+.unit:hover{
+  background-color: whiteSmoke;
+  border-radius: 4px;
+  color: black;
+}
+.unit{
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  padding-left: 0px;
+  padding:8px 12px;
+  margin: 4px;
+}
+.atag:hover{
+  color: black;
+  background-color: whiteSmoke;
+  border-radius: 4px;
+}
+.atag{
+  text-decoration: none;
+  color: white;
+}
+.hide1.active{
+  display: block;
+}
+.hide1{
+  display: none;
+  padding-top: 5px;
+}
+.hide2.active{
+  display: block;
+}
+.hide2{
+  display: none;
+  padding-top: 5px;
+}
+.subjact{
+  margin-bottom: 0px;
+}
+#h1{
+  font-size : 60px;
+  text-align:center;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+#div{
+  text-align:center;
+  font-size:50px;
+  line-height: 1.5;
+}
+.intex{
+  width: 360px;
+  height: 45px;
+  font-size: 50px;
+  text-align:right;
+  border: 0px;
+  background-color: WhiteSmoke;
+  border-radius: 10px;
+  outline: none;
+  font-family: "jua";
+}
+.intex1{
+  width:92px;
+  height:45px;
+  font-size:50px;
+  text-align:right;
+  background-color: whiteSmoke;
+  border-radius: 10px;
+  font-family: "jua";
+}
+#time{
+  font-size: 45px;
+  text-align : center;
+  background-color: whiteSmoke;
+  border-radius: 10px;
+  font-family: "jua";
+}
+#sub{
+  width: 300px;
+  height:60px;
+  text-align : center;
+  font-size:40px;
+  font-family: "jua";
+}
+#write{
+  text-align : center;
+  font-size:35px;
+  margin-bottom: 15px;
+}
+#si-1{
+  margin-top: 5px;
+  margin-left: 15px;
+}
+.si-2{
+  font-size: 30px;
+  font-weight: bold;
+  color:#424242;
+  text-decoration: none;
+}
+#si-3{
+  font-size:20px;
+  text-align:center;
+  padding: 40px;
+}
+#writeend{
+  font-size:45px;
+  text-align:center;
+  margin: 50px;
+  padding-left: auto;
+  padding-right: auto;
+  border: 1px solid black;
+}
+#coupang{
+  height: 140px;
+  width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#addfit{
+  height:100px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -158,3 +158,17 @@ function zzz(obj){
     function uncomma(str) {
         str = String(str);
         return str.replace(/[^\d]+/g, "");}
+
+function hide(){
+  const unit = document.querySelector(".unit_div");
+    unit.classList.toggle('active');
+  }
+
+function hide1(){
+  const unit = document.querySelector(".hide1");
+  unit.classList.toggle('active');
+}
+function hide2(){
+  const unit = document.querySelector(".hide2");
+  unit.classList.toggle('active');
+}

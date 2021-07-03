@@ -10,19 +10,51 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-LQN3J42N18');
     </script>
-
+  <script src="https://kit.fontawesome.com/9bbd978096.js" crossorigin="anonymous"></script>
     <script src="javascriptver2.js"></script>
     <title>저축 시뮬레이터</title>
   </head>
   <body>
+    <nav class="navbar">
+      <div class="navbar_main">
+        <a href="index.html" id='main'>Minimin</a>
+      </div>
+      <div class="unit_div">
+        <ul class="unit">
+          <li class="subjact"><a href="#" class="atag" onclick="hide1()">시뮬레이터</a></li>
+          <div class="hide1">
+            <li><a href="ver2.html" class="atag">저축</a></li>
+            <li><a href="" class="atag">헬스</a></li>
+        </div>
+        </ul>
+        <ul class="unit">
+          <li class="subjact"><a href="#" class="atag" onclick="hide2()">프로그램</a></li>
+          <div class="hide2">
+            <li><a href="" class="atag">빠른댓글</a></li>
+            <li><a href="" class="atag">편한</a></li>
+          </div>
+        </ul>
+        <ul class="unit">
+          <li><a href="" class="atag">포토샵</a></li>
+        </ul>
+        <ul class="unit">
+          <li><a href="" class="atag">영상편집</a></li>
+        </ul>
+      </div>
+      <a href="#" class="toggle">
+          <i class="fas fa-bars fa-2x" onclick="hide()"></i>
+      </a>
+    </nav>
+
+
+
 <div id=si-1>
-  <a href="index.html" class="si-2">저축 시뮬레이터 ver.1</a>
-  <br><a href="ver2.html" class="si-2">저축 시뮬레이터 ver.2</a>
+  <a href="index.html" class="si-2">ver.1</a>
+  <br><a href="ver2.html" class="si-2">ver.2</a>
 </div>
-<h1 id = h1>저축 시뮬레이터 ver.2</h1>
+<h1 id = h1>저축 시뮬레이터</h1>
 <div id= si-3>나는 얼마를 모을 수 있을까?<br>
 </div>
   <div id = "div">
@@ -57,9 +89,10 @@
         </select><input type="text" id="c-1"class="intex1">%
       </td>
     </tr></table></center></div>
+
     <center><div id="td2-1">
-      <input type="button" onclick = "addRow()" id="td2-2" value="행 추가">
-      <input type="button" onclick = "deleteRow(-1)"id="td2-3" value="행 삭제">
+      <input type="button" onclick = "addRow()" class="td2-2" value="행 추가">
+      <input type="button" onclick = "deleteRow(-1)"class="td2-2" value="행 삭제">
     </div></center>
     <center><div id ="end">
     <select name="end1" class = "end"id="end1">
@@ -164,7 +197,7 @@
     </select> 후 나의 자산은?
 
   </div></center>
-<div><center>
+<div><center id="btn">
   <input type="button"id="sub" value="계산하기"onclick="restart()">
 </center></div>
 <div id="writeend">
