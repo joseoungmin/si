@@ -14,8 +14,8 @@ body{
 .navbar_main{
   position:absolute;
   top:0;
-  left: 20px;
-  margin: 10px;
+  left: 15px;
+  margin: 15px;
 }
 #main:hover{
   color: black;
@@ -23,10 +23,10 @@ body{
 #main{
   text-decoration: none;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
 }
 .nothing{
-  height:50px;
+  height:70px;
   width: 100%;
   background-color: gray;
   margin-left: auto;
@@ -51,7 +51,7 @@ body{
   opacity: 0;
   transition:0.5s;
   position: absolute;
-  top:50px;
+  top:70px;
   right: 0px;
   flex-direction: column;
   align-items: center;
@@ -88,6 +88,7 @@ body{
 .atag{
   text-decoration: none;
   color: white;
+  font-size: 30px;
 }
 .hide1.active{
   display: block;
