@@ -3,38 +3,63 @@
 body{
   margin:0px;
   padding: 0px;
-  background-color: WhiteSmoke;
   font-family: "jua";
+  background-color: whiteSmoke;
 }
 .navbar{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+}
+.navbar_main{
+  position:absolute;
+  top:0;
+  left: 20px;
+  margin: 10px;
+}
+#main:hover{
+  color: black;
+}
+#main{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+.nothing{
+  height:50px;
+  width: 100%;
   background-color: gray;
-  padding: 8px 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.toggle i:hover{
+  color:black;
 }
 .toggle i{
   color: white;
 }
 .toggle{
   position: absolute;
-  right: 28px;
-}
-#main{
-  text-decoration: none;
-  color: white;
-  font-size: 27px;
+  right: 20px;
+  margin:10px;
 }
 .unit_div.active{
   display:flex;
   opacity: 1;
 }
 .unit_div{
-  display: none;
+  opacity: 0;
+  transition:0.5s;
+  position: absolute;
+  top:50px;
+  right: 0px;
   flex-direction: column;
   align-items: center;
-  width:100%;
+  width:180px;
+  background-color: gray;
+  border-bottom-left-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .unit_div ul{
   width:100%;
@@ -50,8 +75,10 @@ body{
   color: white;
   list-style: none;
   padding-left: 0px;
-  padding:8px 12px;
-  margin: 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .atag:hover{
   color: black;
