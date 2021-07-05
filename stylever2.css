@@ -203,18 +203,6 @@ body{
   border: 1px solid black;
   font-family:"jua";
 }
-#coupang{
-  height: 140px;
-  width: 680px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#addfit{
-  height:100px;
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-}
 #td2-1{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -241,4 +229,16 @@ td{
   text-align: center;
   padding-left: 5px;
   padding-right: 5px;
+}
+#coupang{
+  width: 320px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#addfit{
+  height:100px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
