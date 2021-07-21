@@ -316,14 +316,24 @@ function a123456(){
 
 function hide(){
   const unit = document.querySelector(".unit_div");
-    unit.classList.toggle('active');
+  unit.classList.toggle("active");
   }
 
 function hide1(){
-  const unit = document.querySelector(".hide1");
-  unit.classList.toggle('active');
-}
+  const unit1 = document.querySelector(".hide1");
+  const unit2 = document.querySelector(".hide2");
+  if (unit1.style.display === "none"){
+  unit2.style.display = "none";
+  unit1.style.display = "block";
+}else{
+  unit1.style.display = "none"
+}}
 function hide2(){
-  const unit = document.querySelector(".hide2");
-  unit.classList.toggle('active');
-}
+  const unit1 = document.querySelector(".hide1");
+  const unit2 = document.querySelector(".hide2");
+  if (unit2.style.display === "none"){
+  unit2.style.display = "block";
+  unit1.style.display = "none";
+}else{
+  unit2.style.display = "none"
+}}

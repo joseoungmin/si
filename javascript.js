@@ -118,7 +118,7 @@ function zzz(obj){
                 aa = aa + ab
                 while (aa < bb){
                   z = z + 1
-                write.innerHTML += (z+"주 "+comma(Math.floor(aa))+"원<br>")
+                  write.innerHTML += (z+"주 "+comma(Math.floor(aa))+"원<br>")
                   aa = aa * cw
                   aa = aa + ab}
                   zzz(z);
@@ -134,7 +134,7 @@ function zzz(obj){
                 aa = aa + ab
                 while (aa < bb){
                   z = z + 1
-                write.innerHTML += (z+"일 "+comma(Math.floor(aa))+"원<br>")
+                  write.innerHTML += (z+"일 "+comma(Math.floor(aa))+"원<br>")
                   aa = aa * ce
                   aa = aa + ab}
                   zz(z);
@@ -143,32 +143,40 @@ function zzz(obj){
                   write.innerHTML += (z+"일 "+comma(Math.floor(aa))+"원<br>")
                   aa = aa * ce
                   aa = aa + ab
-      }}
+    }}
 
-      function inputNumberFormat(obj) {
-        obj.value = comma(uncomma(obj.value));
-    }
-
-
-    function comma(str) {
-        str = String(str);
-        return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, "$1,");
-    }
-
-    function uncomma(str) {
-        str = String(str);
-        return str.replace(/[^\d]+/g, "");}
+function inputNumberFormat(obj) {
+    obj.value = comma(uncomma(obj.value));
+}
+function comma(str){
+    str = String(str);
+    return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, "$1,");
+}
+function uncomma(str){
+    str = String(str);
+    return str.replace(/[^\d]+/g, "");
+}
 
 function hide(){
   const unit = document.querySelector(".unit_div");
-    unit.classList.toggle('active');
+  unit.classList.toggle("active");
   }
 
 function hide1(){
-  const unit = document.querySelector(".hide1");
-  unit.classList.toggle('active');
-}
+  const unit1 = document.querySelector(".hide1");
+  const unit2 = document.querySelector(".hide2");
+  if (unit1.style.display === "none"){
+  unit2.style.display = "none";
+  unit1.style.display = "block";
+}else{
+  unit1.style.display = "none"
+}}
 function hide2(){
-  const unit = document.querySelector(".hide2");
-  unit.classList.toggle('active');
-}
+  const unit1 = document.querySelector(".hide1");
+  const unit2 = document.querySelector(".hide2");
+  if (unit2.style.display === "none"){
+  unit2.style.display = "block";
+  unit1.style.display = "none";
+}else{
+  unit2.style.display = "none"
+}}
